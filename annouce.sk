@@ -1,0 +1,11 @@
+# Made by Cerm_ / BestOfAura
+# you need Skript.sk Installed.
+# Discord: cerm__
+
+command /announce <text>:
+    permission: announce.use
+    permission message: &cYou do not have permission to use this command.
+    trigger:
+        broadcast "&c&lANNOUNCEMENT &7- &f%arg-1%"
+        loop all players:
+            play sound "entity.experience_orb.pickup" with volume 1 and pitch 1 to loop-player
